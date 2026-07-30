@@ -1,0 +1,23 @@
+import HautevilleHouse.MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean.RestrictionModificationPhaseTransition
+import HautevilleHouse.MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean.EvolutionaryGameDynamics
+import HautevilleHouse.MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean.EpidemiologicalSpreadModel
+import HautevilleHouse.MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean.SystemsBiologyRegulatoryNetwork
+import HautevilleHouse.MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean.PopulationDynamicsStability
+
+namespace HautevilleHouse
+namespace MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean
+
+def AdmissibleClassStructure (A : AdmissibleClass) : Prop :=
+  RestrictionModificationPhaseTransitionClosed (A.object : RestrictionModificationPhaseTransitionPackage) ∧
+  EvolutionaryGameDynamicsClosed (A.object : EvolutionaryGameDynamicsPackage) ∧
+  EpidemiologicalSpreadModelClosed (A.object : EpidemiologicalSpreadModelPackage) ∧
+  SystemsBiologyRegulatoryNetworkClosed (A.object : SystemsBiologyRegulatoryNetworkPackage) ∧
+  PopulationDynamicsStabilityClosed (A.object : PopulationDynamicsStabilityPackage)
+
+theorem admissible_class_structure_holds (A : AdmissibleClass) : AdmissibleClassStructure A :=
+  by
+    -- This is a placeholder for the actual proof using the evidence from each package
+    sorry
+
+end MolecularBiologyRestrictionModificationLemmaCanonicalLaneLean
+end HautevilleHouse
